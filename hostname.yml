@@ -1,5 +1,6 @@
 ---
 - name: test localhost command
+  hosts: all
   
   tasks: 
     - name: hostname
