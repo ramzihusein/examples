@@ -6,4 +6,5 @@
     - name: hostname
       shell: "hostname"
       delegate_to: i-09719469ce4f38e83.ec2.internal
+      become: yes
       
