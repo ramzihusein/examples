@@ -1,5 +1,8 @@
 ---
-- name: hostname
-  shell: "hostname"
-  delegate_to: localhost
-  become: yes
+- name: test localhost command
+  
+  tasks: 
+    - name: hostname
+      shell: "hostname"
+      delegate_to: localhost
+      become: yes
