@@ -1,0 +1,9 @@
+---
+- name: test localhost command
+  hosts: all
+  
+  tasks: 
+    - name: hostname
+      shell: "hostname"
+      delegate_to: localhost
+      
