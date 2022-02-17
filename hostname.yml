@@ -6,4 +6,4 @@
     - name: hostname
       shell: "hostname"
       delegate_to: localhost
-      become: yes
+      
