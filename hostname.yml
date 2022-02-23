@@ -6,6 +6,10 @@
     - name: check env
       debug:
         var: hostvars[inventory_hostname]['tower_inventory_id']
+    
+    - name: check env
+      debug:
+        var: hostvars[inventory_hostname]
         
     - name: hostname
       shell: "hostname"
