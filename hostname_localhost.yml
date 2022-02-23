@@ -6,5 +6,7 @@
     - name: hostname
       shell: "hostname"
       delegate_to: localhost
-      
+      debug:
+        msg: "{{ ansible_env }}"
+        
       
