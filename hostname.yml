@@ -5,7 +5,7 @@
   tasks: 
     - name: check env
       debug:
-        msg: 
+        var: hostvars[inventory_hostname]['tower_inventory_id']
         
     - name: hostname
       shell: "hostname"
